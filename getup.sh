@@ -1,3 +1,4 @@
+git pull
 python3 generate_csv.py --cutoff 5
 
 git add .

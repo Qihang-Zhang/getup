@@ -24,19 +24,19 @@ python main.py \
 --name $your_name
 ```
 7. modify the infomation in `personal_info.yml` file to your own
-8. set the github page to the `gh-pages` branch
-![image](./pic/github-page.png)
-9. give workflow Read and write permissions:
+8. give workflow Read and write permissions:
 ![image](./pic/workflow-permisson-1.png)
 ![image](./pic/workflow-permisson-2.png)
-10.  run the following command to generate get-up data:
-```shell
-bash getup.sh
-```
-11.    set shortcut in your laptop to run the `getup.sh` command: add this in your `~/.bashrc` if you use bash, or add it in your `~/.zshrc` if you use zsh.
+9. set shortcut in your laptop to run the `getup.sh` command: add this in your `~/.bashrc` if you use bash, or add it in your `~/.zshrc` if you use zsh.
 ```shell
 alias getup="cd $project_position; bash getup.sh"
 ```
+10. run the following command to generate get-up data:
+```shell
+bash getup.sh
+```
+11. set the github page to the `gh-pages` branch
+![image](./pic/github-page.png)
 Congratulations! now you can open your terminal and type `getup` to document your get-up time! after that, there will be a train running in your terminal to celebrate your get-up time!:
 ![image](./pic/terminal-sl.png)
 ![image](./pic/terminal-morning.png)

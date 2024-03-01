@@ -7,3 +7,4 @@ python_scripts
 mkdocs.yml
 mkdocs_template.yml
 requirements.txt
+scripts

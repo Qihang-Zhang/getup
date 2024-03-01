@@ -37,7 +37,7 @@ bash getup.sh
 ```
 11. set the github page to the `gh-pages` branch
 ![image](./pic/github-page.png)
-Congratulations! now you can open your terminal and type `getup` to document your get-up time! after that, there will be a train running in your terminal to celebrate your get-up time!:
+Congratulations! now you can open your terminal and type `getup` to document your get-up time! after that, there will be a train running in your terminal to celebrate your get-up!:
 ![image](./pic/terminal-sl.png)
 ![image](./pic/terminal-morning.png)
 ![image](./pic/github-page-preview.png)

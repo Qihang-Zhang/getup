@@ -3,9 +3,9 @@ name: Run Local Script
 on:
   repository_dispatch:
     types: [ios]
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 jobs:
   run-script:

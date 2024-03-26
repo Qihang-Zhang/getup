@@ -5,7 +5,21 @@ import argparse
 import sys
 import argparse
 import pdb
-os.environ['TZ'] = 'America/Vancouver'
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+
+# Create a naive datetime object (without timezone)
+naive_dt = datetime.now()
+
+# Attach the UTC timezone
+utc_dt = naive_dt.replace(tzinfo=timezone.utc)
+
+# Convert to another timezone (e.g., Vancouver)
+vancouver_dt = utc_dt.astimezone(ZoneInfo("America/Vancouver"))
+
+print(f"Original (UTC): {utc_dt}")
+print(f"Converted (Vancouver): {vancouver_dt}")
+
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--cutoff', type=float, default=5, help='The cutoff hour for counting runs in the last 7 days')

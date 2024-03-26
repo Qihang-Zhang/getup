@@ -1,9 +1,8 @@
 python3 ./python_scripts/merge_mkdocs.py
 
 python3 ./python_scripts/generate_md.py \
---getup_threshold 6.75 \
+--getup_threshold 7.75 \
 --recent_days 30 \
---tz "America/Vancouver" \
 --name Qihang
                       
 mkdocs gh-deploy --force

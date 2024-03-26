@@ -21,6 +21,18 @@ jobs:
         python-version: '3.11.5' # 根据需要更改 Python 版本
 
     - name: Make script executable
+      run: chmod +x ./env.sh
+  
+    - name: Run the script
+      run: bash ./env.sh
+
+    - name: Make script executable
+      run: chmod +x ./getup.sh
+  
+    - name: Run the script
+      run: bash ./getup.sh
+
+    - name: Make script executable
       run: chmod +x ./deploy.sh
 
     - name: Run the script

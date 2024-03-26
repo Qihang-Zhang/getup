@@ -5,6 +5,7 @@ import argparse
 import sys
 import argparse
 import pdb
+os.environ['TZ'] = 'America/Vancouver'
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--cutoff', type=float, default=5, help='The cutoff hour for counting runs in the last 7 days')

@@ -1,6 +1,9 @@
 git pull
 python3 generate_csv.py --cutoff 5
 
+git config --global user.email "qihangz.work@gmail.com"
+git config --global user.name "Qihang Zhang"
+
 git add .
 git commit -m "$(date +%Y-%m-%d) update"
 git push

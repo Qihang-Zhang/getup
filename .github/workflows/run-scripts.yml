@@ -23,18 +23,18 @@ jobs:
     - name: Make script executable
       run: chmod +x ./env.sh
   
-    - name: Run the script
+    - name: build env
       run: bash ./env.sh
 
     - name: Make script executable
       run: chmod +x ./getup.sh
   
-    - name: Run the script
+    - name: document data
       run: bash ./getup.sh
 
     - name: Make script executable
       run: chmod +x ./deploy.sh
 
-    - name: Run the script
+    - name: deploy
       run: bash ./deploy.sh
       

@@ -8,18 +8,6 @@ import pdb
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-# Create a naive datetime object (without timezone)
-naive_dt = datetime.now()
-
-# Attach the UTC timezone
-utc_dt = naive_dt.replace(tzinfo=timezone.utc)
-
-# Convert to another timezone (e.g., Vancouver)
-vancouver_dt = utc_dt.astimezone(ZoneInfo("America/Vancouver"))
-
-print(f"Original (UTC): {utc_dt}")
-print(f"Converted (Vancouver): {vancouver_dt}")
-
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--cutoff', type=float, default=5, help='The cutoff hour for counting runs in the last 7 days')
@@ -29,7 +17,19 @@ args = argparser.parse_args()
 
 os.makedirs(args.data_dir, exist_ok=True)
 
-now = datetime.now()
+# Create a naive datetime object (without timezone)
+naive_dt = datetime.now()
+
+# Attach the UTC timezone
+utc_dt = naive_dt.replace(tzinfo=timezone.utc)
+
+# Convert to another timezone (e.g., Vancouver)
+new_dt = utc_dt.astimezone(ZoneInfo("America/Vancouver"))
+
+print(f"Original (UTC): {utc_dt}")
+print(f"Converted (New Time Zone): {new_dt}")
+
+now = new_dt
 current_date = now.date()
 current_time = now.strftime('%H:%M:%S')
 

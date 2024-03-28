@@ -1,8 +1,8 @@
 git pull
 python3 generate_csv.py --cutoff 5 --tz "America/Vancouver"
 
-git config --global user.email "qihangz.work@gmail.com"
-git config --global user.name "Qihang Zhang"
+git config --global user.email "anchor-zhang@outlook.com"
+git config --global user.name "Qihang bot"
 
 git add .
 git commit -m "$(date +%Y-%m-%d) update"
